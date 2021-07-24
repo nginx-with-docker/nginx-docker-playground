@@ -3,13 +3,11 @@
 ARG NGINX_VERSION=1.19.7
 FROM nginx:${NGINX_VERSION}
 # Mirror
-# RUN sed -i 's/http:\/\/.*.debian.org/http:\/\/mirrors.tuna.tsinghua.edu.cn/' /etc/apt/sources.list
+# RUN sed -i 's/http:\/\/.*.debian.org/https:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/dists\/Debian10.10/' /etc/apt/sources.list
 
 ARG NGINX_SHASUM=0dde53b5a948efc9dc852814186052e559d190ea
 
-RUN sed -i '/deb http:\/\/nginx.org\/packages\/debian\/ stretch nginx/d' /etc/apt/sources.list && \
-    sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn stretch\/updates main/d' /etc/apt/sources.list && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install -y apt-transport-https lsb-release ca-certificates && \
     apt-get install -y build-essential software-properties-common && \
     apt install -y perl libperl-dev libgd3 libgd-dev libgeoip1 libgeoip-dev geoip-bin libxml2 libxml2-dev libxslt1.1 libxslt1-dev libc6-dev libpcre3-dev&& \
