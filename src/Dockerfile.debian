@@ -14,7 +14,7 @@ RUN apt-get update && \
     apt install -y wget curl && mkdir -p /usr/src
 
 RUN cd /usr/src && \
-    wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz && \
+    wget https://cfhcable.dl.sourceforge.net/project/pcre/pcre/8.44/pcre-8.44.tar.gz && \
     tar zxvf pcre-8.44.tar.gz && \
     cd pcre-8.44 && \
     ./configure && make && make install
