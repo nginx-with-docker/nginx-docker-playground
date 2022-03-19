@@ -4,12 +4,13 @@ Nginx Development Environment based on official docker image.
 
 ## Docker Image Name
 
-`docker pull soulteary/prebuilt-nginx-modules:base-1.21.5`
+`docker pull soulteary/prebuilt-nginx-modules:base-1.21.6`
 
 ## Nginx Versions
 
 Below are other available nginx versions.
 
+- 1.21.6
 - 1.21.5
 - 1.21.4
 - 1.21.3
