@@ -8,6 +8,8 @@ Nginx Development Environment based on official docker image and official source
 
 ```bash
 docker pull soulteary/prebuilt-nginx-modules:base-1.23.1
+# or
+docker pull soulteary/prebuilt-nginx-modules:base-1.23.1-alpine
 ```
 
 Example, how to quickly build a nginx addon:
