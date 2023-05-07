@@ -7,7 +7,7 @@ Nginx Development Environment based on official docker image and official source
 ## Quick Start
 
 ```bash
-docker pull soulteary/prebuilt-nginx-modules:base-1.23.1
+docker pull soulteary/prebuilt-nginx-modules:base-1.24.0
 # or
 docker pull soulteary/prebuilt-nginx-modules:base-1.23.1-alpine
 ```
@@ -52,6 +52,7 @@ Pre-built nginx addons binaries based on this project
 
 Below are other available nginx versions.
 
+- 1.24.0
 - 1.23.1
 - 1.23.0
 - 1.22.0
